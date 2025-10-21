@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sở thích</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: #ffe4f2;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+     .navbar {
+      background: linear-gradient(90deg, #f7b6d9, #fcd6ef);
+      border-bottom: 2px solid #FF69B4;
+      box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar-brand {
+      color: #FF1493 !important;
+      font-weight: bold;
+      font-size: 22px;
+      text-shadow: 1px 1px 1px #fff;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,20,147)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      color: #d63384 !important;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 10px 15px !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #ffd9ec;
+      color: #ff1493 !important;
+    }
+
+    .nav-link.active {
+      color: #ff1493 !important;
+      background-color: #fff;
+      border: 1px solid #ff69b4;
+    }
+
+
+    h2 {
+      color: #ff3b9e;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .hobby-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .hobby-card {
+      background: #ffb6d9;
+      border: 2px solid #FF1493;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      width: 300px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(255, 20, 147, 0.3);
+    }
+
+    .hobby-card:hover {
+      transform: scale(1.05);
+    }
+
+    .hobby-card img {
+      border-radius: 10px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .hobby-card p {
+      font-size: 18px;
+      font-family: cursive;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #f3ebeb;
+      color: #FF69B4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      border-top: 2px solid #FF1493;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #FF69B4;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s;
+      float: right;
+      margin: 20px;
+    }
+
+    a.button:hover {
+      background-color: #f8a6d6;
+      color: #fff;
+    }
+    .quote-box {
+      background: #fff0f5;
+      border-left: 5px solid #ff69b4;
+      margin: 40px auto;
+      padding: 20px;
+      width: 60%;
+      text-align: center;
+      border-radius: 12px;
+      font-style: italic;
+      color: #c71585;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart"></i>Website của Ánh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="gioithieubanthan.html">Giới thiệu bản thân</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sothich.html">Sở thích</a></li>
+          <li class="nav-item"><a class="nav-link" href="kehoachhoctap.html">Kế hoạch học tập</a></li>
+          <li class="nav-item"><a class="nav-link" href="thongtinlienhe.html">Thông tin liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2><i class="fa-solid fa-music"></i> 1. Thích nghe nhạc</h2>
+    <p>Các bài hát yêu thích:</p>
+    <div class="hobby-section">
+      <div class="hobby-card">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f458ce68-ca3a-4824-a027-b3981c8e67ad/dcfdidi-009a4672-93af-438e-af9c-31907079a407.png/v1/fill/w_894,h_894,q_70,strp/blackpink___forever_young_album_cover_by_souheima_dcfdidi-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1NiIsInBhdGgiOiJcL2ZcL2Y0NThjZTY4LWNhM2EtNDgyNC1hMDI3LWIzOTgxYzhlNjdhZFwvZGNmZGlkaS0wMDlhNDY3Mi05M2FmLTQzOGUtYWY5Yy0zMTkwNzA3OWE0MDcucG5nIiwid2lkdGgiOiI8PTExNTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sp6uOv7l-LCrsjscIPygBVUB_K2MTjWl96KARKlpD3M"
+          alt="Forever Young">
+        <p>Forever Young</p>
+      </div>
+      <div class="hobby-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Taylor_Swift_-_Love_Story.png" alt="Love Story">
+        <p>Love Story</p>
+      </div>
+      <div class="hobby-card">
+        <img src="https://avatar-ex-swe.nixcdn.com/song/2022/12/06/8/b/9/3/1670320054490_640.jpg" alt="24h">
+        <p>24h</p>
+      </div>
+    </div>
+
+    <h2><i class="fa-solid fa-film"></i> 2. Thích xem phim</h2>
+    <p>Các bộ phim hay mà mình đã xem:</p>
+    <div class="hobby-section">
+      <div class="hobby-card">
+        <img src="https://www.phimoxy.com/wp-content/uploads/2019/04/tam-sinh-tam-the-thap-ly-dao-hoa-three-lives-three-worlds-ten-miles-peach-blossom-2017-poster.jpg"
+          alt="Tam sinh tam thế">
+        <p>Tam sinh tam thế<br>Thập lý đào hoa</p>
+      </div>
+      <div class="hobby-card">
+        <img src="https://static2.vieon.vn/vieplay-image/poster_v4/2021/01/18/dk4xg5w6_iajkw28h_660x946-bobokinhtam.jpg"
+          alt="Bộ bộ kinh tâm">
+        <p>Bộ bộ kinh tâm</p>
+      </div>
+      <div class="hobby-card">
+        <img src="https://thethaovanhoa.mediacdn.vn/Upload/O5NP4aFt6GVwE7JTFAOaA/files/2017/08/nam-ay-hoa-no-trang-vua-tron-ra-mat-03.jpg"
+          alt="Năm ấy hoa nở trăng vừa tròn">
+        <p>Năm ấy hoa nở<br>Trăng vừa tròn</p>
+      </div>
+    </div>
+
+    <a class="button" href="trangchu.html"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+  </div>
+
+  <footer>
+    <p>Nguyễn Thị Ngọc Ánh <i class="fas fa-heart"></i> <i class="fas fa-heart" style="color:#FF1493;"></i></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

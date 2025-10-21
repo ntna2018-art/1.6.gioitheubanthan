@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kế hoạch học tập</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+  <style>
+    body {
+      background-color: #ffe4f2;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #f7b6d9, #fcd6ef);
+      border-bottom: 2px solid #FF69B4;
+      box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar-brand {
+      color: #FF1493 !important;
+      font-weight: bold;
+      font-size: 22px;
+      text-shadow: 1px 1px 1px #fff;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,20,147)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      color: #d63384 !important;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 10px 15px !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #ffd9ec;
+      color: #ff1493 !important;
+    }
+
+    .nav-link.active {
+      color: #ff1493 !important;
+      background-color: #fff;
+      border: 1px solid #ff69b4;
+    }
+
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      border: 4px double #ff69b4;
+      padding: 10px;
+      width: 50%;
+      margin: 30px auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+    }
+
+    .table-container {
+      max-width: 90%;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.3);
+    }
+
+    table.dataTable thead th {
+      background-color: #ffb6d9;
+      color: #fff;
+      text-align: center;
+    }
+
+    table.dataTable tbody td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 20px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s;
+      float: right;
+    }
+
+    a.button:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6d9;
+      color: #fff;
+      margin-top: 40px;
+      border-top: 3px solid #ff69b4;
+    }
+
+    .quote-box {
+      background: #fff0f5;
+      border-left: 5px solid #ff69b4;
+      margin: 40px auto;
+      padding: 20px;
+      width: 60%;
+      text-align: center;
+      border-radius: 12px;
+      font-style: italic;
+      color: #c71585;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart"></i> Website của Ánh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="gioithieubanthan.html">Giới thiệu bản thân</a></li>
+          <li class="nav-item"><a class="nav-link" href="sothich.html">Sở thích</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kehoachhoctap.html">Kế hoạch học tập</a></li>
+          <li class="nav-item"><a class="nav-link" href="thongtinlienhe.html">Thông tin liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1><i class="fa-solid fa-book-open"></i> Kế hoạch học tập của tôi</h1>
+  <div class="table-container">
+    <table id="bangkehoach" class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Thời Gian Học<br>(Tối thiểu / tuần)</th>
+          <th>Môn Học</th>
+          <th>Mục Tiêu</th>
+          <th>Ghi Chú</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8 tiếng</td>
+          <td>Lập Trình Cơ Bản</td>
+          <td>Nắm vững cú pháp, thực hành bài tập cơ bản</td>
+          <td>Thực hành trên Upcoder</td>
+        </tr>
+        <tr>
+          <td>8 tiếng</td>
+          <td>Thiết kế Web</td>
+          <td>Tự thiết kế được website cá nhân</td>
+          <td>Đọc tài liệu, làm bài tập trong sách bài tập</td>
+        </tr>
+        <tr>
+          <td>7 tiếng</td>
+          <td>Toán rời rạc và ứng dụng</td>
+          <td>Hiểu các thuật toán cơ bản, áp dụng giải bài toán</td>
+          <td>Làm bài tập trên giấy và máy tính</td>
+        </tr>
+        <tr>
+          <td>7 tiếng</td>
+          <td>Cơ sở toán trong CNTT</td>
+          <td>Vận dụng công thức toán học trong lập trình</td>
+          <td>Làm thêm bài tập trên mạng</td>
+        </tr>
+        <tr>
+          <td>12 tiếng</td>
+          <td>Ôn Tập & Làm Bài Tập</td>
+          <td>Củng cố kiến thức và kỹ năng thực hành</td>
+          <td>Ôn theo từng môn học mỗi ngày</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="quote-box">
+    <i class="fa-solid fa-quote-left"></i> "Học tập không phải là nghĩa vụ, mà là cơ hội để phát triển chính mình mỗi
+    ngày!" <i class="fa-solid fa-quote-right"></i>
+  </div>
+
+  <div class="container text-center">
+    <a class="button" href="trangchu.html"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+  </div>
+
+  <footer>
+    <p>Nguyễn Thị Ngọc Ánh <i class="fas fa-heart"></i></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#bangkehoach').DataTable({
+        pageLength: 5,
+        language: {
+          search: "Tìm kiếm:",
+          lengthMenu: "",
+          paginate: {
+            next: "Sau",
+            previous: "Trước"
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Trang Chủ - Website của Ánh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #ffe4f2;
+      font-family: "Poppins", sans-serif;
+    }
+     .navbar {
+      background: linear-gradient(90deg, #f7b6d9, #fcd6ef);
+      border-bottom: 2px solid #FF69B4;
+      box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar-brand {
+      color: #FF1493 !important;
+      font-weight: bold;
+      font-size: 22px;
+      text-shadow: 1px 1px 1px #fff;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,20,147)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      color: #d63384 !important;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 10px 15px !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #ffd9ec;
+      color: #ff1493 !important;
+    }
+
+    .nav-link.active {
+      color: #ff1493 !important;
+      background-color: #fff;
+      border: 1px solid #ff69b4;
+    }
+
+
+    h1 {
+      text-align: center;
+      color: #d63384;
+      border: 4px double #ff69b4;
+      padding: 10px;
+      width: 50%;
+      margin: 30px auto;
+      background-color: #fff0f6;
+      border-radius: 15px;
+    }
+
+    .info-card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(255, 105, 180, 0.3);
+      padding: 30px;
+      margin: 50px auto;
+      max-width: 800px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: scale(1.02);
+    }
+
+    .info-card img {
+      border-radius: 50%;
+      border: 4px solid #ff69b4;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .info-text li {
+      list-style: none;
+      padding: 8px 0;
+      font-size: 18px;
+      color: #4a004e;
+    }
+
+    .info-text li::before {
+      content: "💗 ";
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 30px auto;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6d9;
+      color: #fff;
+      margin-top: 40px;
+      border-top: 3px solid #ff69b4;
+    }
+
+    .quote-box {
+      background: #fff0f5;
+      border-left: 5px solid #ff69b4;
+      margin: 40px auto;
+      padding: 20px;
+      width: 60%;
+      text-align: center;
+      border-radius: 12px;
+      font-style: italic;
+      color: #c71585;
+    }
+   .quote-box {
+      background: #fff0f5;
+      border-left: 5px solid #ff69b4;
+      margin: 40px auto;
+      padding: 20px;
+      width: 60%;
+      text-align: center;
+      border-radius: 12px;
+      font-style: italic;
+      color: #c71585;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart"></i> Website của Ánh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gioithieubanthan.html">Giới thiệu bản thân</a></li>
+          <li class="nav-item"><a class="nav-link" href="sothich.html">Sở thích</a></li>
+          <li class="nav-item"><a class="nav-link" href="kehoachhoctap.html">Kế hoạch học tập</a></li>
+          <li class="nav-item"><a class="nav-link" href="thongtinlienhe.html">Thông tin liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1><i class="fa-solid fa-house-chimney"></i> Giới thiệu bản thân</h1>
+
+  <div class="info-card">
+    <img src="https://cdn.glitch.global/9ef31027-e62a-4f86-b950-2830bd07ec55/27f26a6e-6637-4261-a607-a008a8206681.jpg?v=1730640702952" alt="Ngọc Ánh">
+    <ul class="info-text">
+      <li><strong>Họ và tên:</strong> Nguyễn Thị Ngọc Ánh</li>
+      <li><strong>Ngày sinh:</strong> 04/01/2007</li>
+      <li><strong>Quê quán:</strong> Gia Lai</li>
+      <li><strong>Học tại:</strong> Trường Đại học Sư phạm Thành phố Hồ Chí Minh</li>
+      <li><strong>Ngành:</strong> Sư phạm Tin học</li>
+      <li><strong>Mục tiêu:</strong> Trở thành một giáo viên giỏi, yêu nghề và sáng tạo</li>
+    </ul>
+  </div>
+  <div class="quote-box">
+    <i class="fa-solid fa-quote-left"></i> “Mỗi ngày học là một ngày tiến gần hơn đến ước mơ của chính mình.” <i class="fa-solid fa-quote-right"></i>
+  </div>
+
+  <div class="text-center">
+    <a class="button" href="trangchu.html"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+  </div>
+
+  <footer>
+    <p>Nguyễn Thị Ngọc Ánh <i class="fas fa-heart"></i></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

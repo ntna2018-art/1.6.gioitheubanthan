@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Thông tin liên hệ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f7dff7;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #f7b6d9, #fcd6ef);
+      border-bottom: 2px solid #FF69B4;
+      box-shadow: 0 2px 6px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar-brand {
+      color: #FF1493 !important;
+      font-weight: bold;
+      font-size: 22px;
+      text-shadow: 1px 1px 1px #fff;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,20,147)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      color: #d63384 !important;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 10px 15px !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #ffd9ec;
+      color: #ff1493 !important;
+    }
+
+    .nav-link.active {
+      color: #ff1493 !important;
+      background-color: #fff;
+      border: 1px solid #ff69b4;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      background-color: #FF69B4;
+      color: black;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 20px;
+      transition-duration: 0.4s;
+      float: right;
+    }
+
+    a.button:hover {
+      background-color: #f5f2f2;
+      color: #FF1493;
+    }
+
+    .contact-card {
+      background: #FFB6C1;
+      border: 2px solid #FF1493;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+    }
+
+    .contact-icon {
+      color: #FF1493;
+      margin-right: 10px;
+    }
+
+    .feedback-box {
+      background: #ffe0f0;
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 600px;
+      box-shadow: 0 3px 8px rgba(255, 20, 147, 0.25);
+    }
+
+    .feedback-box textarea {
+      width: 100%;
+      border: 1px solid #ffb6c1;
+      border-radius: 10px;
+      padding: 10px;
+      resize: none;
+    }
+
+    .feedback-box button {
+      background-color: #FF69B4;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .feedback-box button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart"></i>Website của Ánh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="gioithieubanthan.html">Giới thiệu bản thân</a></li>
+          <li class="nav-item"><a class="nav-link" href="sothich.html">Sở thích</a></li>
+          <li class="nav-item"><a class="nav-link" href="kehoachhoctap.html">Kế hoạch học tập</a></li>
+          <li class="nav-item"><a class="nav-link active" href="thongtinlienhe.html">Thông tin liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4" style="color:#d63384;">Thông tin liên hệ</h2>
+    <div class="contact-card mx-auto" style="max-width:600px;">
+      <p><i class="fa-solid fa-phone contact-icon"></i>Điện thoại: 0383 112 337</p>
+      <p><i class="fa-solid fa-envelope contact-icon"></i>Email: ntna2222@gmail.com</p>
+      <p><i class="fa-solid fa-location-dot contact-icon"></i>Địa chỉ: TP. Hồ Chí Minh</p>
+      <div class="text-center mt-4">
+        <h5 style="color:#d63384;">Bản đồ địa chỉ</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8824483502954!2d106.68094907316899!3d10.743542259803256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fa974ed62b3%3A0x6e1895aef7b23c95!2zMTAwIMSQLiBU4bqhIFF1YW5nIELhu611LCBzdHJlZXQsIERpc3RyaWN0IDA4LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1760959092701!5m2!1svi!2s" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="250" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+   
+    <div class="feedback-box">
+      <h5 class="text-center" style="color:#d63384;">Góp ý cho trang web</h5>
+      <textarea rows="4" placeholder="Nhập góp ý của bạn..."></textarea>
+      <div class="text-end">
+        <button type="button">Gửi góp ý</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <a class="button" href="trangchu.html"><i class="fa-solid fa-arrow-left"></i> Quay lại</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
